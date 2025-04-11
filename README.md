@@ -12,6 +12,6 @@ Key Features & Technologies
 
   3. Forecast VisualizationForecast results are pushed to Supabase and visualized via Supaboard.
 
-  4.Hourly SchedulerUses schedule module to update data, retrain, and predict every hour.
+  4. Hourly SchedulerUses schedule module to update data, retrain, and predict every hour.
 
   5. Tech StackPython, Pandas, Scikit-learn, OpenWeatherMap API, Joblib, Schedule, Jupyter Notebook
