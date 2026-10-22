@@ -1,15 +1,26 @@
-# Weather-Forecasting
+# Weather Forecasting Pipeline
 
-Project Overview
+A learning project that collects weather observations, trains a Random Forest classifier, and produces a weather-condition prediction from recent measurements.
 
-This project builds an automated machine learning pipeline to forecast weather conditions using historical data fetched from the OpenWeatherMap API. It trains a supervised model to predict weather metrics like temperature and precipitation, updates predictions hourly. This is useful for agriculture, logistics, and event planning where real-time weather awareness is crucial.
+## Pipeline
 
-Key Features & Technologies
+1. Fetch weather data from OpenWeatherMap.
+2. Append processed observations to a CSV dataset.
+3. Train a scikit-learn Random Forest model.
+4. Save the model with Joblib.
+5. Generate a prediction from recent numeric features.
 
-  1. Automated Data FetchingFetches weather data for the last 5 hours from OpenWeatherMap.
+## Technology
 
-  2. Machine Learning ModelTrains a model to predict future weather conditions (e.g., temperature, rain).
+Python · Pandas · Requests · scikit-learn · Joblib · Schedule · Jupyter Notebook
 
-  3. Hourly SchedulerUses schedule module to update data, retrain, and predict every hour.
+## Run safely
 
-  4. Pandas, Scikit-learn, OpenWeatherMap API, Joblib, Schedule, Jupyter Notebook
+Set the OpenWeatherMap key as an environment variable and update the city/configuration before running. Do not place API keys directly in notebooks or source files.
+
+```bash
+pip install pandas requests scikit-learn joblib schedule jupyter
+jupyter notebook
+```
+
+The repository includes the notebook workflow, data directories, model artifacts, and supporting scripts. Validate data freshness, time-based splits, class balance, and forecast metrics before treating the output as a real forecast.
